@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack Card Counter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Blackjack Card Counter</h1>
+        <div class="count-display">
+            <h2>Current Count: <span id="count">0</span></h2>
+            <h2>True Count: <span id="true-count">0</span></h2>
+            <h2>Total Cards Counted: <span id="total-cards">0</span></h2>
+        </div>
+        <div>
+            <label for="decks">Number of Decks Remaining:</label>
+            <input type="number" id="decks" value="1" min="1">
+        </div>
+        <div class="buttons">
+            <button class="card-button" data-value="2">2</button>
+            <button class="card-button" data-value="3">3</button>
+            <button class="card-button" data-value="4">4</button>
+            <button class="card-button" data-value="5">5</button>
+            <button class="card-button" data-value="6">6</button>
+            <button class="card-button" data-value="7">7</button>
+            <button class="card-button" data-value="8">8</button>
+            <button class="card-button" data-value="9">9</button>
+            <button class="card-button" data-value="10">10</button>
+            <button class="card-button" data-value="J">J</button>
+            <button class="card-button" data-value="Q">Q</button>
+            <button class="card-button" data-value="K">K</button>
+            <button class="card-button" data-value="A">A</button>
+        </div>
+        <button id="reset-button">Reset</button>
+        <h3>History</h3>
+        <ul id="history" class="history-list"></ul>
+    </div>
+    <script src="blackjack.js"></script>
+</body>
+</html>
